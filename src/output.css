@@ -674,6 +674,10 @@ video {
   background-image: linear-gradient(360.00deg,rgb(17,17,17),rgba(17,17,17,0) 100%),url('images/banner.png');
 }
 
+.bg-\[linear-gradient\(360\.00deg\2c rgb\(17\2c 17\2c 17\)\2c rgba\(17\2c 17\2c 17\2c 0\)_100\%\)\2c url\(\'\.\.\/images\/banner\.png\'\)\] {
+  background-image: linear-gradient(360.00deg,rgb(17,17,17),rgba(17,17,17,0) 100%),url('../images/banner.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
