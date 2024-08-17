@@ -639,6 +639,18 @@ video {
   margin-top: 2rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -699,8 +711,18 @@ video {
   gap: 2rem;
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-x-2 {
@@ -717,9 +739,23 @@ video {
   border-color: rgb(231 231 231 / var(--tw-border-opacity));
 }
 
+.border-red-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
 .bg-\[\#B68C5A\] {
   --tw-bg-opacity: 1;
   background-color: rgb(182 140 90 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#111111CC\] {
+  background-color: #111111CC;
+}
+
+.bg-\[\#111111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
 .bg-\[linear-gradient\(180\.00deg\2c rgb\(243\2c 243\2c 243\)\2c rgba\(243\2c 243\2c 243\2c 0\)_100\%\)\] {
@@ -792,6 +828,26 @@ video {
   padding-bottom: 120px;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -828,6 +884,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-extrabold {
@@ -871,6 +932,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#F3F3F3\] {
+  --tw-text-opacity: 1;
+  color: rgb(243 243 243 / var(--tw-text-opacity));
+}
+
 .font-Garamond {
   font-family: "EB Garamond", serif;
 }
@@ -907,6 +973,11 @@ video {
     padding-right: 2rem;
   }
 
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -918,6 +989,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-28 {
+    margin-top: 7rem;
+  }
+
   .md\:border-l-2 {
     border-left-width: 2px;
   }
@@ -965,6 +1040,16 @@ video {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .lg\:text-7xl {
